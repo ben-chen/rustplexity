@@ -2,13 +2,21 @@
 name = "rustplexity"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Simple bigram-based perplexity calculator, useful for filtering out boilerplate or other abnormal text."
+repository = "https://github.com/ben-chen/rustplexity/"
+keywords = ["perplexity"]
+readme = "README.md"
+authors = ["Ben Chen <chenbenjamin2@gmail.com>"]
+exclude = ["src/main.rs"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = { version = "1.12.0", features = ["full"] }
-regex = "1.5.4"
-num = "0.4.0"
-anyhow = "1.0.44"
+tokio = { version = "1.35.1", features = ["full"] }
+regex = "1.10.2"
+num = "0.4.1"
+anyhow = "1.0.77"
 lazy_static = "1.4.0"
+
 

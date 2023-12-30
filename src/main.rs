@@ -1,7 +1,7 @@
 use std::{error::Error, path::Path};
 
-mod rustplexity;
-use rustplexity::BigramPerplexityModel;
+mod lib;
+use lib::BigramPerplexityModel;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
